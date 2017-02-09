@@ -151,7 +151,6 @@ def head_to_head_tiebreaker(tied_teams, max_teams_allowed):
                         tied_teams.remove(k);
                         break;
             out = out + head_to_head_tiebreaker(tied_teams, max_teams_allowed);
-            #TODO - recall head to head with teams in out removed. **needed bug fix**
             #if no more spots left, break, this prevents side effects
             if max_teams_allowed == 0:
                 return out;
